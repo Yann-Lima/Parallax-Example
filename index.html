@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Parallax Scrolling</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header id="header">
+        <a href="#" class="logo">Logo</a>
+        <ul class="navigation">
+            <li><a href="#" class="active">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Events</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </header>
+    <section>
+        <h2 id="txt">Hello Winter</h2>
+        <img src="image/monutain_01.png" id="m1">
+        <img src="image/monutain_02.png" id="m2">
+        <img src="image/monutain_03.png" id="m3">
+        <img src="image/monutain_04.png" id="m4">
+        <img src="image/trees.png" id="tr">
+        <img src="image/cable_cars.png" id="crs">
+        <img src="image/house.png" id="house">        
+    </section>
+    <div class="sec">
+        <h2>Parallax Scrolling Website</h2>
+        <p>Parallax is a term used in astronomy to describe the apparent shift in position of an object when viewed from different positions. This phenomenon occurs when the observer's position changes, causing the object to appear to move relative to a fixed background.
+
+            In astronomy, parallax is used to measure the distance to nearby stars. By observing a star from two different positions on Earth, astronomers can measure the angle of the star's apparent shift in position and use trigonometry to calculate its distance from Earth. This method is known as the parallax method and is one of the most accurate ways to measure distances to nearby stars.
+            
+            Parallax is also used in other fields, such as photography and videography, to create the illusion of depth in images. This is achieved by</p>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/ScrollTrigger.min.js"></script>
+    <script>
+        gsap.from("#txt", {
+            scrollTrigger : {
+                scrub: true
+            },
+            x: 350,
+        }),
+        gsap.from("#m1", {
+            scrollTrigger : {
+                scrub: true
+            },
+            y: 100,
+        }),
+        gsap.from("#m2", {
+            scrollTrigger : {
+                scrub: true
+            },
+            y: 50,
+        }),
+        gsap.from("#m3", {
+            scrollTrigger : {
+                scrub: true
+            },
+            y: 200,
+        }),
+        gsap.from("#m4", {
+            scrollTrigger : {
+                scrub: true
+            },
+            y: 150,
+        }),
+        gsap.from("#tr", {
+            scrollTrigger : {
+                scrub: true
+            },
+            x: 150,
+        }),
+        gsap.from("#crs", {
+            scrollTrigger : {
+                scrub: true
+            },
+            x: 100,
+        }),
+        gsap.from("#house", {
+            scrollTrigger : {
+                scrub: true
+            },
+            y: 10,
+        })
+    </script>
+</body>
+</html>
